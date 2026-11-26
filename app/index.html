@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RumahKas — Anggaran Rumah Tangga</title>
+<meta name="description" content="RumahKas: anggaran rumah tangga Keluarga Prasetyo. Lacak pemasukan, pengeluaran, anggaran tiap kategori, dan tabungan — semua tersimpan di perangkat Anda.">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEDElEQVR4nO2bSWgTURjH/5Nma6u21qZJYxetaWtVzEGKFsQFFBFcQBFEPakXUamKgkJPIngR9ebB9aCieBBLURGxKuJCQbAUq8GlbRZrUqPVZptpJp6m7SQzzaSTyaOT+Z2S77157//953tvXhICaOQ3VCadi7auSyglJNuEHzyVlJukTtMp8WTSGTFp43ROPBkxI3RiF6gpeUA8H0ED1JY8h1BeKQaoNXmO5PxEl0C+wDNA7XefY2KeWgVwL/Ll7nNw+WoVQFoAaTQDSAsgjWYAaQGk0QwgLYA0mgGkBZBGM4C0ANLo5Q7wdHU3nKUhwTaGpRCKF6A/ZEJXcCZuDVSgZ7hY7pRZRdEKMOgSKDWMwlkawv66QTxb041jDR4lp8yYnC4BCsCpJjda5vzN5bSTknUDOv2lsDxogbW9Bc4ny3D5W2VKnx3VQ9medsooVgFsAvBFjGjrmQdfxMhrm18cVWrajJG9CaaDTQCeiAn2QnosFomn+j645S0KqPEvpTa+XIIgbcDRRg9WlQ+j3MQgSBvw3F+Cc64q9IfMWdGnuAE6CqguivFivX+L0l633vYHBx0+mHTsWMxmprGzJoDN9iB2vVuI10Oz5OuTPYLYwBRgL6RxZkkfKs3jd59mdbj+3Zr2+mMNHl7yEynWx3G9+TMsJka2zqxXwNqKPwhsfSPYNszosa+rAZ6IKe04bAI4+6kGt/srQFEJ7K7x42STe+zHzDLjKA4s8OH0x1pZenP2GPwyUoi1z5fiRaBEUv/73nJcdM2FP2bAz6gR511VaPfO4fXZZA/K1pUzAxwzIuhY2YM6iU+AR4NlKbHHSbH5xVGYC4SXiVQUOwc4HjbjxIc6MOz4r9L2QhrXml283V6MQMwgKTZTH5elV7EKGGb0uNFnxZneGl58cUkIe2r9aa8X2uCEYv9GC6YuEjlYAle+VcId5m96rfVe6NNUwQbr79SYjb/m+0JmRAXOFJmguAE0S+HSV/5xuLoohm1Vkx+Ht1cF0FrvhcXEoMLE4Ei9F1vsv3h9On6k7hOZovhBCABu9ltxvNGDMuPoWOyQw4d7bgvE6kBHAW2LBtC2aECw/Tetx6UvdtnacvIUiMR1uJL0oahpVhjrballznHBNRcxVlheOK7D3q4G+AU2xUzJ2WPw6ncbwknrtbXeK9r/yeBsrO504o7bgh9RIxiWws+oEXfdFqzpdOLVkLTzRDpkL4F1L5ZK6hek9ajtWJ7R2F9HzDj83jEVWZLJ++8ENQNICyBN3huQk3OAFGztK4jMm/cVoBlAWgBpNANICyCNZgD3Qup/bNQCl69WARPf5EsVTMxTq4DkgNqrIDk/wQpQqwlCeYkuAbWZIJaP9s/RTAabTkaorYIV4z8oDDkg2eiAfgAAAABJRU5ErkJggg==">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/dashboard">
+      <span class="brand-mark" aria-hidden="true">Rp</span>
+      <span class="brand-text">
+        <strong>RumahKas</strong>
+        <small>Anggaran Rumah Tangga</small>
+      </span>
+    </a>
+    <nav class="mainnav" aria-label="Navigasi utama">
+      <a href="#/dashboard" data-route="dashboard">Dasbor</a>
+      <a href="#/transactions" data-route="transactions">Transaksi</a>
+      <a href="#/budgets" data-route="budgets">Anggaran</a>
+      <a href="#/goals" data-route="goals">Target Tabungan</a>
+      <a href="#/reports" data-route="reports">Laporan</a>
+    </nav>
+    <div class="month-chip" id="monthChip" title="Bulan anggaran aktif"></div>
+  </div>
+</header>
+
+<main class="wrap" id="app" aria-live="polite"></main>
+
+<footer class="wrap footer">
+  <p><strong>RumahKas</strong> — data anggaran Keluarga Prasetyo tersimpan hanya di peramban Anda (localStorage). Tidak ada data yang dikirim ke mana pun.</p>
+  <p class="footer-note">Angka ditampilkan dalam Rupiah (IDR). Bulan aktif: November 2026.</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
